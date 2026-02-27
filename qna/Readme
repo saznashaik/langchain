@@ -1,7 +1,3 @@
-Here is your **README in the same professional style** for your **LangChain + OpenAI + Streamlit Q&A Chatbot project**, matching the format of your Voice Agent README:
-
----
-
 # 🤖 LangChain Q&A Chatbot — OpenAI + Streamlit
 
 A simple and interactive **AI-powered Q&A chatbot** built using **LangChain**, **OpenAI GPT models**, and **Streamlit**.
@@ -247,5 +243,6 @@ AI/ML Developer | GenAI Enthusiast
 LangChain — LLM Framework
 OpenAI — GPT Models
 Streamlit — Web App Framework
+
 
 
