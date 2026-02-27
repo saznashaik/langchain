@@ -161,19 +161,19 @@ Parsed output:
 # How All Components Work Together
 
 Flow:
-
+````
 User Input
-↓
+    ↓
 PromptTemplate creates structured prompt
-↓
+    ↓
 LLMChain sends prompt to AI model
-↓
+    ↓
 Hugging Face / ChatModel generates response
-↓
+    ↓
 Output Parser formats response
-↓
+    ↓
 Final structured output returned
-
+````
 ---
 
 # Why This Architecture is Important
@@ -212,5 +212,6 @@ Imagine ordering food in a restaurant:
 | Output Parser    | Output formatter    | Converts output into structured format |
 
 ---
+
 
 
