@@ -128,6 +128,144 @@ India → New Delhi → Red Fort, India Gate
 
 ---
 
+In LangChain, both **SimpleSequentialChain** and **SequentialChain** are used to connect multiple chains together so the output of one becomes the input of the next.
+But they differ in **flexibility and complexity**.
+
+---
+
+# 🔹 SimpleSequentialChain vs SequentialChain (Easy Explanation)
+
+## 🔹 1. SimpleSequentialChain (Basic version)
+
+👉 This is the **simplest chain**
+👉 It passes **one output → to the next chain → step by step**
+
+### Characteristics
+
+* Only **one input**
+* Only **one output per step**
+* Output automatically becomes next input
+* Very easy to use
+* No variable management needed
+
+### Flow
+
+```
+Input → Chain1 → Chain2 → Chain3 → Final Output
+```
+
+### Example
+
+```python
+from langchain.chains import SimpleSequentialChain
+
+chain = SimpleSequentialChain(
+    chains=[chain1, chain2, chain3]
+)
+
+result = chain.run("Tell me about AI")
+```
+
+---
+
+## 🔹 2. SequentialChain (Advanced version)
+
+👉 This is the **advanced and flexible chain**
+👉 You can use **multiple inputs and outputs**
+
+### Characteristics
+
+* Supports **multiple inputs**
+* Supports **multiple outputs**
+* You can use **custom variable names**
+* More control and flexibility
+* Used in complex workflows
+
+### Flow
+
+```
+input1,input2 → Chain1 → output1
+output1,input2 → Chain2 → output2
+output1,output2 → Chain3 → Final Output
+```
+
+### Example
+
+```python
+from langchain.chains import SequentialChain
+
+chain = SequentialChain(
+    chains=[chain1, chain2],
+    input_variables=["topic"],
+    output_variables=["summary", "quiz"]
+)
+```
+
+---
+
+# 🔥 Key Differences Table
+
+| Feature          | SimpleSequentialChain | SequentialChain          |
+| ---------------- | --------------------- | ------------------------ |
+| Difficulty       | Easy                  | Advanced                 |
+| Inputs           | Single input only     | Multiple inputs allowed  |
+| Outputs          | Single output         | Multiple outputs allowed |
+| Variable control | No control            | Full control             |
+| Use case         | Simple workflows      | Complex workflows        |
+| Flexibility      | Low                   | High                     |
+
+---
+
+# 🔹 Real-world Example (Simple understanding)
+
+## SimpleSequentialChain example
+
+```
+Input: "AI"
+
+Chain1 → Generate summary
+Chain2 → Convert summary to joke
+
+Final Output → Joke about AI
+```
+
+---
+
+## SequentialChain example
+
+```
+Input: "AI"
+
+Chain1 → Generate summary
+Chain2 → Generate quiz from summary
+Chain3 → Generate interview questions
+
+Final Output:
+summary + quiz + interview questions
+```
+
+---
+
+# 🔹 When to use what
+
+Use **SimpleSequentialChain** ✅ when:
+
+* Linear flow
+* One input, one output
+* Simple chatbot
+* Beginner projects
+
+Use **SequentialChain** ✅ when:
+
+* Multiple inputs
+* Multiple outputs
+* Complex workflows
+* Agentic AI systems
+* Production applications
+
+---
+
+
 ## 6. Output Parser
 
 **Meaning:**
@@ -262,6 +400,7 @@ User input is appended to session memory, and the model generates responses base
 * Supports future Agentic AI and RAG integration
 
 ---
+
 
 
 
