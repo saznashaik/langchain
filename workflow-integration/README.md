@@ -160,7 +160,7 @@ Parsed output:
 
 # How All Components Work Together
 
-Flow:
+## Flow:
 ````
 User Input
     ↓
@@ -212,6 +212,7 @@ Imagine ordering food in a restaurant:
 | Output Parser    | Output formatter    | Converts output into structured format |
 
 ---
+
 
 
 
