@@ -101,7 +101,7 @@ Get API key from:
 ### 1️⃣ Clone the repository
 
 ```
-git clone https://github.com/saznashaik/langchain-qa-chatbot.git
+git clone https://github.com/saznashaik/langchain/qna.git
 
 cd langchain-qa-chatbot
 ```
@@ -243,6 +243,7 @@ AI/ML Developer | GenAI Enthusiast
 LangChain — LLM Framework
 OpenAI — GPT Models
 Streamlit — Web App Framework
+
 
 
 
