@@ -128,7 +128,7 @@ India → New Delhi → Red Fort, India Gate
 
 ---
 
-##🔹 SimpleSequentialChain vs SequentialChain (Easy Explanation)
+## SimpleSequentialChain vs SequentialChain (Easy Explanation)
 
 ## 🔹 1. SimpleSequentialChain (Basic version)
 
@@ -395,6 +395,7 @@ User input is appended to session memory, and the model generates responses base
 * Supports future Agentic AI and RAG integration
 
 ---
+
 
 
 
