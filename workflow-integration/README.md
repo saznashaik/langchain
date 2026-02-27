@@ -212,7 +212,8 @@ Imagine ordering food in a restaurant:
 | Output Parser    | Output formatter    | Converts output into structured format |
 
 ---
-## Conversational Q&A Chatbot with memory using streamlit session state
+
+# Conversational Q&A Chatbot with memory using streamlit session state
 
 ### Feature Description
 
@@ -261,6 +262,7 @@ User input is appended to session memory, and the model generates responses base
 * Supports future Agentic AI and RAG integration
 
 ---
+
 
 
 
