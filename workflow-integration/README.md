@@ -128,12 +128,7 @@ India → New Delhi → Red Fort, India Gate
 
 ---
 
-In LangChain, both **SimpleSequentialChain** and **SequentialChain** are used to connect multiple chains together so the output of one becomes the input of the next.
-But they differ in **flexibility and complexity**.
-
----
-
-# 🔹 SimpleSequentialChain vs SequentialChain (Easy Explanation)
+##🔹 SimpleSequentialChain vs SequentialChain (Easy Explanation)
 
 ## 🔹 1. SimpleSequentialChain (Basic version)
 
@@ -400,6 +395,7 @@ User input is appended to session memory, and the model generates responses base
 * Supports future Agentic AI and RAG integration
 
 ---
+
 
 
 
