@@ -212,6 +212,55 @@ Imagine ordering food in a restaurant:
 | Output Parser    | Output formatter    | Converts output into structured format |
 
 ---
+## Conversational Q&A Chatbot with memory using streamlit session state
+
+### Feature Description
+
+The Conversational Q&A Chatbot is an interactive AI-powered feature integrated into the system to enable real-time communication between users and the AI assistant. It allows users to ask questions and receive intelligent, context-aware responses. The chatbot uses LangChain and an OpenAI chat model, with Streamlit providing the user interface.
+
+### Purpose
+
+This feature enhances the system by adding a conversational interface, allowing users to interact with the platform using natural language instead of traditional dashboards or manual queries.
+
+### Key Capabilities
+
+* Real-time conversational interaction
+* Context-aware responses using conversation memory
+* Maintains chat history using Streamlit session state
+* Personality-driven assistant (comedian-style responses for engagement)
+* Demonstrates practical integration of Generative AI in web applications
+
+### Technical Implementation
+
+The chatbot uses LangChain message objects to maintain conversation flow:
+
+```python
+chat = ChatOpenAI(temperature=0.5)
+
+if 'flowmessages' not in st.session_state:
+    st.session_state['flowmessages'] = [
+        SystemMessage(content="You are a comedian AI assistant")
+    ]
+```
+
+User input is appended to session memory, and the model generates responses based on full conversation context.
+
+### System Workflow
+
+1. User enters a question in the Streamlit interface
+2. Question is stored in session state
+3. LangChain sends conversation to the LLM
+4. LLM generates contextual response
+5. Response is displayed and saved for future context
+
+### Value Added to the Project
+
+* Enhances user interaction and accessibility
+* Demonstrates real-world LLM integration
+* Provides foundation for asset query assistant
+* Supports future Agentic AI and RAG integration
+
+---
 
 
 
