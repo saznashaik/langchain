@@ -264,13 +264,6 @@ Assets depreciate at 10% annually.
 
 ---
 
-# 👨‍💻 Author
-
-**Shaik Sazna**
-B.Tech Student – AI/ML and Generative AI Developer
-
----
-
 # ⭐ Conclusion
 
 This project demonstrates a complete real-world Generative AI application using LangChain, OpenAI, and Astra DB. It enables intelligent document querying using Retrieval-Augmented Generation and forms the foundation for enterprise AI assistants.
