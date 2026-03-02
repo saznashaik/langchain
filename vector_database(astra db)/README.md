@@ -13,7 +13,7 @@ Instead of manually searching documents, users can interact with PDFs using natu
 
 * Enable natural language interaction with PDF documents
 * Automatically extract and process document content
-* Store document knowledge in vector database
+* Store document knowledge in vector database(serverless)
 * Retrieve relevant information efficiently
 * Generate accurate answers using LLM
 * Demonstrate real-world Generative AI implementation
